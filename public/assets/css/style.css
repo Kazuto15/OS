@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+.conteiner{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#area-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+}
+#imgLogin{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(#1e58d5, #04002a);
+    
+}
+#login{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-login{
+    width: 75%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border-top: solid 1px black;
+}
+.formulario-login > .btn_enviar{
+    margin-bottom: 2%
+}
+/* #login{
+    width: 35vw;
+    height: 40vh;
+    border: solid rgb(43, 163, 214) 2px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgb(96, 140, 215) 0px 0px 10px;
+    background-color: white;
+} */
+.formulario-login > h1{
+    padding-top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#area-registro{
+    width: 50vw;
+    height: 51vh;
+    display: flex;
+    background-color: rebeccapurple;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: rgb(96, 140, 215) 0px 4px 15px;
+}
+#imgRegistro{
+    width: 15vw;
+    height: 95%;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(230, 230, 230);
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.voltar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registro{
+    width: 35vw;
+    height: 100%;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    padding-left: 15px;
+}
+.registro > h1{
+    padding-top: 5%;
+    margin-bottom: 7%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.formulario{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.area-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.area-input > input{
+    border: none;
+    border-bottom: solid 1px black;
+    margin-bottom: 3vh;
+    width: 75%;
+    height: 3vh;
+}
+#select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+#defeito{
+    padding-top: 5%;
+}
+.btn_enviar{
+    border-radius: 5px;
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 20px;
+    background-color: rgb(96, 140, 215);
+    border: none;
+    color: white;
+}
+.voltar > h1{
+    margin-bottom: 40px;
+}
+
+.btn_voltar{
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 20px;
+    border: 2px solid;
+    border-color: rgb(96, 140, 215);
+    color: rgb(96, 140, 215);
+    background-color: transparent;
+}
+.btn_voltar:hover{
+    color: white;
+    background-color: rgb(96, 140, 215);
+    transition: 0.3s;
+}
+.btn_enviar:hover{
+    background-color: rgb(124, 157, 241);
+    transform: 0.6;
+}
+input:focus{
+    outline: none;
+}
+.data{
+    display: flex;
+    margin-bottom: 2vh;
+    position: relative ;
+    right: 16%;
+}
+.data > label{
+    margin-right: 1vw;
+}
+#botao{
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+#date{
+    border-radius: 5px;
+    border: 1px solid rgb(195, 191, 191);
+    padding: 2px;
+}
+#md{
+    border-radius: 5px;
+}
+#mc{
+    border-radius: 5px;
+}
+.area-input > input:focus{
+    border-color: dodgerblue;
+}
+.area-input > input::placeholder{
+    color: #888;
+  transition: all 0.3s ease-in-out;
+    }
+.area-input > input:focus::placeholder,
+.area-input > input:not(:placeholder-shown)::placeholder {
+  color: dodgerblue;
+  transform: translateY(-1rem);
+  font-size: 0.8rem;
+}
